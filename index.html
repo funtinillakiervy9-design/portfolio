@@ -9,6 +9,9 @@
   />
   <title>Jonh Kiervy Funtinilla | Portfolio</title>
   <meta name="theme-color" content="#020617" />
+  <link rel="icon" type="image/svg+xml" href="public/icons/favicon.svg" />
+  <link rel="apple-touch-icon" href="public/icons/apple-touch-icon.svg" />
+  <link rel="manifest" href="site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -23,13 +26,21 @@
 </head>
 <body>
   <a class="skip-link" href="#top">Skip to content</a>
+  <div class="scroll-progress" aria-hidden="true">
+    <span class="scroll-progress-fill"></span>
+  </div>
   <div class="background-orb orb-a"></div>
   <div class="background-orb orb-b"></div>
   <div class="background-grid"></div>
 
   <header class="site-header">
     <nav class="container nav" aria-label="Main navigation">
-      <a href="#top" class="brand">Jonh Kiervy Funtinilla</a>
+      <a href="#top" class="brand">
+        <span class="brand-avatar-wrap">
+          <img class="brand-avatar" src="public/images/projects/71824687-c457-4660-80fd-90d7ecdc3827-removebg-preview.png?v=20260323" alt="Jonh Kiervy Funtinilla profile photo" />
+        </span>
+        <span class="brand-name">Jonh Kiervy Funtinilla</span>
+      </a>
       <div class="nav-actions">
         <button class="menu-btn" aria-expanded="false" aria-label="Open menu">Menu</button>
       </div>
@@ -62,7 +73,7 @@
         </div>
         <figure class="hero-photo card">
           <img
-            src="public/images/71824687-c457-4660-80fd-90d7ecdc3827.jpg"
+            src="public/images/projects/71824687-c457-4660-80fd-90d7ecdc3827-removebg-preview.png?v=20260323"
             alt="Photo of Jonh Kiervy Funtinilla"
             loading="eager"
             fetchpriority="high"
@@ -78,10 +89,24 @@
       </ul>
     </section>
 
+    <section class="container section trust-strip reveal" aria-label="Daily tools">
+      <div class="card trust-strip-card">
+        <p class="eyebrow">Daily Workflow</p>
+        <h2>Tools I use every day</h2>
+        <p class="section-intro">Core tools I use to research, design, and build polished user experiences.</p>
+        <ul class="tool-strip">
+          <li><i class="bi bi-pen"></i> Figma</li>
+          <li><i class="bi bi-diagram-3"></i> FigJam</li>
+          <li><i class="bi bi-code-slash"></i> VS Code</li>
+        </ul>
+      </div>
+    </section>
+
     <section id="about" class="container section reveal">
       <div class="section-heading">
         <p class="eyebrow">About</p>
         <h2>UI/UX Designer</h2>
+        <p class="section-intro">I design clear, user-centered interfaces that balance usability and visual quality.</p>
       </div>
       <div class="card about-grid">
         <p>
@@ -101,23 +126,24 @@
       <div class="section-heading">
         <p class="eyebrow">Experience</p>
         <h2>UI/UX Student Experience</h2>
+        <p class="section-intro">Hands-on academic and collaborative work focused on solving real user problems.</p>
       </div>
       <div class="timeline">
-        <article class="card timeline-item">
+        <article class="card timeline-item timeline-animate-item">
           <div class="timeline-top">
             <h3>UI/UX Design Student</h3>
             <p>Academic Projects - 2024 - 2026</p>
           </div>
           <p>Designed user-centered interfaces and case studies focused on usability, accessibility, and visual hierarchy.</p>
         </article>
-        <article class="card timeline-item">
+        <article class="card timeline-item timeline-animate-item">
           <div class="timeline-top">
             <h3>UX Research & Wireframing Practice</h3>
             <p>Student Collaboration - 2024 - 2025</p>
           </div>
           <p>Conducted user interviews, built user flows, and created wireframes and prototypes for class-based product concepts.</p>
         </article>
-        <article class="card timeline-item">
+        <article class="card timeline-item timeline-animate-item">
           <div class="timeline-top">
             <h3>UI Design & Prototyping</h3>
             <p>Portfolio Development - 2025 - 2026</p>
@@ -131,25 +157,26 @@
       <div class="section-heading">
         <p class="eyebrow">Education</p>
         <h2>Academic Background</h2>
+        <p class="section-intro">My academic path in Information Technology and UI/UX design foundations.</p>
       </div>
       <div class="card education-card">
         <ul class="education-list">
-          <li class="education-item">
+          <li class="education-item timeline-animate-item">
             <div class="education-year">2026</div>
             <h3>BS Information Technology - 2nd Year (Current)</h3>
             <p>Western Institute of Technology - Started IT track in 2024</p>
           </li>
-          <li class="education-item">
+          <li class="education-item timeline-animate-item">
             <div class="education-year">2024</div>
             <h3>Senior High School Graduate</h3>
             <p>Leganes National High School</p>
           </li>
-          <li class="education-item">
+          <li class="education-item timeline-animate-item">
             <div class="education-year">2022</div>
             <h3>Junior High School Graduate</h3>
             <p>Leganes National High School</p>
           </li>
-          <li class="education-item">
+          <li class="education-item timeline-animate-item">
             <div class="education-year">2018</div>
             <h3>Elementary Graduate</h3>
             <p>Leganes Central Elementary School</p>
@@ -162,13 +189,18 @@
       <div class="section-heading">
         <p class="eyebrow">Projects</p>
         <h2>Selected work</h2>
+        <p class="section-intro">A curated set of projects showcasing my process, design decisions, and outcomes.</p>
       </div>
       <div class="project-grid">
         <article class="card project" data-project-card>
           <img class="project-image" src="public/images/project2/Screenshot 2026-03-22 170251.png" alt="Notion AwesomeTodos project screenshot" loading="lazy" decoding="async" width="1200" height="760" />
           <h3>Notion AwesomeTodos</h3>
+          <ul class="project-badges">
+            <li class="badge-solo"><i class="bi bi-person"></i> Solo Project</li>
+            <li class="badge-academic"><i class="bi bi-mortarboard"></i> Academic</li>
+          </ul>
           <p>
-            A clean and intuitive task management web app inspired by Notion, where users can add, organize, edit, and track daily todos efficiently.
+            A clean and intuitive task management app inspired by Notion, where users can add, organize, edit, and track daily tasks efficiently.
           </p>
           <ul class="project-meta">
             <li><strong>Role:</strong> UI/UX Designer & Frontend Developer</li>
@@ -184,10 +216,10 @@
         <article class="card project" data-project-card>
           <div class="project-slider" data-slider>
             <div class="project-slider-track">
-              <img class="project-image" src="public/images/project/1.jpg" alt="Konek Barangay slide 1" loading="lazy" decoding="async" width="1200" height="760" />
-              <img class="project-image" src="public/images/project/2.jpg" alt="Konek Barangay slide 2" loading="lazy" decoding="async" width="1200" height="760" />
-              <img class="project-image" src="public/images/project/3.jpg" alt="Konek Barangay slide 3" loading="lazy" decoding="async" width="1200" height="760" />
-              <img class="project-image" src="public/images/project/4.jpg" alt="Konek Barangay slide 4" loading="lazy" decoding="async" width="1200" height="760" />
+              <img class="project-image" src="public/images/project/1.jpg" alt="KonektBarangay slide 1" loading="lazy" decoding="async" width="1200" height="760" />
+              <img class="project-image" src="public/images/project/2.jpg" alt="KonektBarangay slide 2" loading="lazy" decoding="async" width="1200" height="760" />
+              <img class="project-image" src="public/images/project/3.jpg" alt="KonektBarangay slide 3" loading="lazy" decoding="async" width="1200" height="760" />
+              <img class="project-image" src="public/images/project/4.jpg" alt="KonektBarangay slide 4" loading="lazy" decoding="async" width="1200" height="760" />
             </div>
             <button class="slider-btn slider-prev" type="button" aria-label="Previous slide">
               <i class="bi bi-chevron-left"></i>
@@ -196,9 +228,13 @@
               <i class="bi bi-chevron-right"></i>
             </button>
           </div>
-          <h3>Konek Barangay</h3>
+          <h3>KonektBarangay</h3>
+          <ul class="project-badges">
+            <li class="badge-team"><i class="bi bi-people"></i> Team Project</li>
+            <li class="badge-academic"><i class="bi bi-mortarboard"></i> Academic</li>
+          </ul>
           <p>
-            Konek Barangay is our modern e-services platform where residents can book appointments, request barangay documents, and track service updates online with speed and convenience.
+            KonektBarangay is our modern e-services platform where residents can book appointments, request barangay documents, and track service updates online with speed and convenience.
           </p>
           <ul class="project-meta">
             <li><strong>Role:</strong> UI/UX Designer</li>
@@ -212,7 +248,7 @@
         <article class="card project" data-project-card>
           <div class="project-slider" data-slider>
             <div class="project-slider-track">
-              <img class="project-image" src="public/images/project3/i1.png" alt="My Portfolio slide 1" loading="lazy" decoding="async" width="1200" height="760" />
+              <img class="project-image" src="public/images/project3/i1.png?v=20260322" alt="My Portfolio slide 1" loading="lazy" decoding="async" width="1200" height="760" />
               <img class="project-image" src="public/images/project3/i2.png" alt="My Portfolio slide 2" loading="lazy" decoding="async" width="1200" height="760" />
               <img class="project-image" src="public/images/project3/i3.png" alt="My Portfolio slide 3" loading="lazy" decoding="async" width="1200" height="760" />
               <img class="project-image" src="public/images/project3/i4.png" alt="My Portfolio slide 4" loading="lazy" decoding="async" width="1200" height="760" />
@@ -226,6 +262,10 @@
             </button>
           </div>
           <h3>My Portfolio</h3>
+          <ul class="project-badges">
+            <li class="badge-solo"><i class="bi bi-person"></i> Solo Project</li>
+            <li class="badge-academic"><i class="bi bi-mortarboard"></i> Academic</li>
+          </ul>
           <p>
             A personal portfolio website that showcases my UI/UX journey, featured projects, education, and contact information with a modern, responsive design.
           </p>
@@ -247,6 +287,7 @@
       <div class="section-heading">
         <p class="eyebrow">UI/UX Capabilities</p>
         <h2>UI/UX Skills & Tools</h2>
+        <p class="section-intro">Methods and tools I use to move from user insights to refined interfaces.</p>
       </div>
       <div class="card skills">
         <span>User Research</span>
@@ -258,8 +299,33 @@
         <span>Usability Testing</span>
         <span>Design Systems</span>
         <span>Figma</span>
-        <span>Adobe XD</span>
         <span>Canva</span>
+      </div>
+    </section>
+
+    <section class="container section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Design Mindset</p>
+        <h2>Design Principles</h2>
+        <p class="section-intro">The principles that guide every decision across research, interface, and interaction.</p>
+      </div>
+      <div class="principles-grid">
+        <article class="card principle-card">
+          <h3><i class="bi bi-eye"></i> Clarity</h3>
+          <p>I prioritize clear layouts and readable content so users can complete tasks quickly and confidently.</p>
+        </article>
+        <article class="card principle-card">
+          <h3><i class="bi bi-universal-access-circle"></i> Accessibility</h3>
+          <p>I design with contrast, hierarchy, and inclusive interactions so more users can use the product smoothly.</p>
+        </article>
+        <article class="card principle-card">
+          <h3><i class="bi bi-grid-1x2"></i> Consistency</h3>
+          <p>I keep components and patterns consistent to reduce confusion and make interfaces feel familiar.</p>
+        </article>
+        <article class="card principle-card">
+          <h3><i class="bi bi-chat-square-text"></i> Feedback</h3>
+          <p>I ensure every user action gets clear feedback through states, messages, and transitions.</p>
+        </article>
       </div>
     </section>
 
